@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  flask-api:
+    image: ketangharateg/flask-api
+    container_name: flask-micro-api
+    ports:
+      - "5000:5000"
+  mongo-db:
+    image: mongo
+    container_name: mongo
+    ports:
+      - "27017:27017" 
